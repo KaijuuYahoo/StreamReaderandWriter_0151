@@ -9,9 +9,9 @@ int main(int argc, char const *argv[])
         throw 0.5; //melemparkan sebuah integer maka
         cout <<"Pernyataan tidak akan dieksekusi" <<endl;
     }
-    catch(const std::exception& e)
+    catch(int a)
     {
-        std::cerr << e.what() << '\n';
+        cout << "Pengecualian akan di eksekusi" << endl;
     }
     
     return 0;
