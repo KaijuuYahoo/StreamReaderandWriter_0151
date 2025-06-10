@@ -3,7 +3,7 @@
 #include<array>
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
     cout << "Awal Program " << endl; //penanda 1:...
     try
@@ -13,9 +13,9 @@ int main(int argc, char const *argv[])
         cout << data.at(5)<<endl;
         //memanggil array elemen ke 5
     }
-    catch(const std::exception& e)
+    catch(exception& e)
     {
-        std::cerr << e.what() << '\n';
+        cout << e.what() << endl;
     }
     
 
