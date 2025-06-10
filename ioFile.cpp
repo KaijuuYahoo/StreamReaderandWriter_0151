@@ -22,6 +22,22 @@ int main()
         outfile<< baris <<endl;
     }
     outfile.close();
+
     ifstream infile; 
+
+    //Menunjuk ke sebuah file 
+    infile.open("contohfile.txt");
+    cout << ">= Membuka dan membaca file" << endl;
+    //jika file ada
+    if (infile.is_open())
+    {
+        //melakukan perulangan setiap baris
+        while (getline(infile,baris))
+        {
+            cout << baris << endl;
+        }
+        
+    }
+    
     return 0;
 }
