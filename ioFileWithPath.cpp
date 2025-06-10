@@ -14,6 +14,19 @@ int main(int argc, char const *argv[])
     ofstream outfile;
     //Menunjuk nama file tujuan
     outfile.open(NamaFile + ".txt", ios::out);
-    cout <<
+    cout << ">= Menulis file, \'q\' untuk keluar" <<endl;
+    while (true)
+    {
+        cout << "- ";
+        //Mendapatkan baris setiap karakter dalam 1 baris
+        getline(cin,baris);
+        //Loop akan berhenti apabila menuliskan karakter q
+        if (baris=="q") break;
+        //Menulis dan Memasukkan nilai dari 'baris' ke dalam file 
+        outfile<< baris <<endl;
+    }
+    //selesai dalam menulis dan menutup file 
+    outfile.close();
+    
     return 0;
 }
