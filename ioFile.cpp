@@ -36,8 +36,8 @@ int main()
         {
             cout << baris << endl;
         }
-        
+        infile.close();     
     }
-    
+    else cout <<"Unable to open file";
     return 0;
 }
