@@ -27,6 +27,21 @@ int main(int argc, char const *argv[])
     }
     //selesai dalam menulis dan menutup file 
     outfile.close();
-    
+    //membuka file dalam mode membaca
+    ifstream infile; 
+    //Menunjuk ke sebuah file tujuan
+    infile.open(NamaFile + ".txt", ios::in);
+    cout << ">= Membuka dan membaca file" << endl;
+    //jika file ada
+    if (infile.is_open())
+    {
+        //melakukan perulangan setiap baris
+        while (getline(infile,baris))
+        {
+            cout << baris << endl;
+        }
+        infile.close();     
+    }
+    else cout <<"Unable to open file";
     return 0;
 }
