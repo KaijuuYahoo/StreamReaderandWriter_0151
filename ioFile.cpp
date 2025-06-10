@@ -17,7 +17,7 @@ int main()
         cout << "- ";
         //Mendapatkan baris setiap karakter dalam 1 baris
         getline(cin,baris);
-
+        //Loop akan berhenti apabila menuliskan karakter q
         if (baris=="q") break;
         outfile<< baris <<endl;
     }
