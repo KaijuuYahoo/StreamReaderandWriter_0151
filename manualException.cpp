@@ -11,8 +11,8 @@ int main(int argc, char const *argv[])
     }
     catch(int a)
     {
+        //blok ini akan di eksekusi
         cout << "Pengecualian akan di eksekusi" << endl;
-
     }
     catch(...)
     {
